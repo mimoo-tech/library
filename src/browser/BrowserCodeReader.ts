@@ -239,7 +239,7 @@ export class BrowserCodeReader {
     let videoConstraints: MediaTrackConstraints;
 
     if (!deviceId) {
-      videoConstraints = { facingMode: 'environment' };
+      videoConstraints = { facingMode: { ideal: 'environment' } };
     } else {
       videoConstraints = { deviceId: { exact: deviceId } };
     }
